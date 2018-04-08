@@ -13,7 +13,7 @@ def nothing(x):
     pass
 
 # import image 
-inputImageName = 'test_videos/solidYellowLeft/143.jpg'
+inputImageName = 'test_images/test1.jpg'
 
 try:
     img = cv2.imread(inputImageName)  # BRG
