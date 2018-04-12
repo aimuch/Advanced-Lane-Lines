@@ -11,6 +11,7 @@ The goals / steps of this project are the following:
 * [Determine the curvature of the lane and vehicle position with respect to center.](#jump6)
 * [Warp the detected lane boundaries back onto the original image.](#jump7)
 * [Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.](#jump8)
+* [Discussion.](#jump9)
 
 ## Step 0 : import packages
 
@@ -1300,4 +1301,12 @@ HTML("""
 </video>
 
 
+## <span id="jump8">Setp 9: Discussion.</span>
 
+#### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+
+![png](readme_img/fail.png)   
+
+From above image, we can see the frame133.jpg was failed to find lane. There are some factors which lead to this. There was shadow on the road witch is lead to select lane color difficultly. The bounder between new and old pavement was recognised to lane using sobel filter.    
+
+I could combine previous frames to process this frame. Because the location of the lane should not change acutely.
